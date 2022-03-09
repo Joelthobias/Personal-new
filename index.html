@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/rotate text.js"></script>
+    <link rel="stylesheet" href="css/rotate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <script>
+        $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".navbar");
+            $nav.toggleClass('navbar-light bg-light', $(this).scrollTop() > $nav.height());
+            });
+        });
+        $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".navbar");
+            $nav.removeClass('navbar-dark', $(this).scrollTop() >$nav.addClass('navbar-dark'));
+            });
+        });
+        $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $(".navbar").removeClass("navbar-dark");
+        } else {
+            $(".navbar").addClass("navbar-dark");
+        }
+        });
+
+      
+    </script>
+<div id="particles-js"></div>
+
+    <header class=" ">
+        <div class="overlay"></div>
+                <nav class="containers navbar-dark  navbar sticky-top navbar-expand-lg  ">
+                    <div class="container">
+                        <h1 class="navbar-brand">Joel</h1>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Serives</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+
+                            </ul>
+                        </div>                        
+                    </div>
+                </nav>
+        <div class="container">
+
+            <div class="container sin z-index">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="text-center header-content mx-auto">
+                            <h4 class="text-white first-title mb-4">Welcome</h4>
+                            <h1 class="header-name text-white str mb-0">I'M  <span class="rotate">Joel Joseph C T, Web Devloper, Web Designer</span>
+                            <div>
+                                <p class="text-white mx-auto header-desc mt-4">HI, I'm Joel Jospeh C T ,  A Web Designer and Node.js devloper from kerala . I'm ready to work in your pojects and ready for frelance works .</p>
+                            </div>
+                            <div class="mt-4 pt-2">
+                                <a href="#" class="btns  btn-outline-custom btns-round">Download Cv</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+        <div class="scroll_down">
+            <a href="#about" class="scroll">
+                <i class="text-white"></i>
+            </a>
+        </div>     
+    </header>
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-5 profileimg container">
+                <div class="justify-content-center ">
+                    <img src="img/profile.jpg" class="profile " alt="">
+                </div>
+            </div>
+            <div class="col-md-7 about">
+                <div class=" ">
+                    <h2>
+                        <span class="fw-bold">About </span>Me
+                    </h2>
+                    <h4 class="mt-4">Hello! <span class="text-custom fw-bold">I'M Joel.</span></h4>
+                    <p class="text-muted mt-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                    <p class="text-muted mt-2" > The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    <p class="text-muted mt-2">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    <div class="social">
+                        <div class="icon">
+                            <a href="https://wa.me/+919633428835" target="_blank" ><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.instagram.com/the.penciler/" target="_blank" ><i class="fab fa-instagram"></i></a> 
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/joeljosephct" target="_blank" ><i class="fab fa-linkedin"></i></a> 
+                        </div>
+                        <div class="icon">
+                            <a href="mailto:joelthobias447@gmail.com" target="_blank" ><i class="far fa-envelope"></i></a> 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        $(".rotate").textrotator({
+        animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+        separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+        speed: 2000 // How many milliseconds until the next word show.
+        });
+    </script>    
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="js/particle.js"></script>
+    
+</body>
+</html>
