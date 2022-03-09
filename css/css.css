@@ -157,3 +157,7 @@ header > .container{
 	padding-left: 2rem;
 	font-size: 2rem;
 }
+.container{
+	padding-left: 15px;
+	padding-right: 15px;
+}
