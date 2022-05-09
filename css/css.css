@@ -150,8 +150,9 @@ header > .container{
 	display: grid;
 	justify-content: center !important;
 }
-.social{
+.social {
 	display: flex;
+	padding-bottom: 2rem;
 }
 .social>.icon{
 	width: 2em;
@@ -179,8 +180,10 @@ header > .container{
 main{
 	background-color: #e0e0e0;
 }
-#about, #service{
+#about, #service {
 	padding-top: 8em;
+	padding-right: 30px;
+	padding-left: 38px;
 }
 .mainh2,.mainh2b{
 	color: #e97373;
