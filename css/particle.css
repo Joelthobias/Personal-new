@@ -16,6 +16,7 @@ canvas {
   z-index: 1;
   background-image: url("../img/home.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-attachment:fixed ;
   background-position: 50% 50%;
