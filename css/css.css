@@ -7,13 +7,13 @@ body{
 *, ::after, ::before {
 	box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700');
+
+
 @import url(particle.css);
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 @import url(media.css);
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700');
 body{
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito Sans', sans-serif !important;
 }
 h1,
 h2,
@@ -161,18 +161,11 @@ header > .container{
 	font-size: 13px;
 	z-index: 8;
 }
-.profile {
-	height: 20rem;
-	width: 20rem;
-}
-.profileimg{
-	margin: 6rem;
-}
 #particles-js{
 	height: 100vh;
 }
-#about{
-	margin-bottom: 5rem;
+#about {
+	margin: 6rem 0;
 }
 .img-div{
 	display: flex;
@@ -184,71 +177,55 @@ header > .container{
     border-radius: 0.25rem;
     max-width: 75%;
     height: auto;
-    margin-left: auto !important;
 }
 .about-txt{
 	--bs-text-opacity: 1;
     color: #6c757d!important;
 }
-.about{
-	margin-top: 6rem;
+
+
+
+.img-project {
+	height: 14rem;
+	padding: 1rem;
+	width: 22rem;
 }
-.profileimg > div {
-	position: relative;
-	display: grid;
-	justify-content: center !important;
+.project-body {
+	margin-left: 1.5rem;
 }
-.social {
-	display: flex;
-	padding-bottom: 2rem;
-}
-.social>.icon{
-	width: 2em;
-	padding-left: 2rem;
-	font-size: 2rem;
-}
-.container{
-	padding-left: 15px;
-	padding-right: 15px;
-}
-.card-title{
+.project-title {
+	font-size: 1.3rem;
 	font-weight: bold;
 }
-.card-text>span{
-	font-size: .8;
-	font-style: italic;
-
+@media (max-width:768px) {
+	.img-project {
+		height: 14rem;
+		margin-top: 2rem;
+		width: 100%;
+	}
+	.project-body {
+		border-bottom: solid .2px black ;
+	}
 }
-.abt{
-	border-radius: 50px;
-	background: #e0e0e0;
-	box-shadow:  20px 20px 60px #bebebe,
-				-20px -20px 60px #ffffff;
+.portifolio{
+	margin-top: 12rem;
 }
-main{
-	background-color: #e0e0e0;
+.about{
+	margin-top: 9rem;
 }
-#about, #service {
-	padding-top: 8em;
-	padding-right: 30px;
-	padding-left: 38px;
+.portifolio>div>.title{
+	font-weight: bold;
+	margin-bottom: 2rem;
+	border-bottom: solid 1px black;
+	width: 10rem;
+	padding-bottom: .5rem;
 }
-.mainh2,.mainh2b{
-	color: #e97373;
-	font-weight: 1000;
-	font-size: 3rem;
+.project-description {
+	font-size: .9rem;
 }
-.mainh2b{
-	color: #000;
-}
-.icon>a{
-	color: #000;
-}
-#service{
-	padding-bottom: 5rem;
-}
-.card-body{
-background-color: #f7f3f3;
-
-
+.title{
+	font-weight: bold;
+	border-bottom: solid 1px black;
+	width: 10rem;
+	padding-bottom: .5rem;
 }
