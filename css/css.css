@@ -1,12 +1,4 @@
-body{
-	overflow: visible;
-}
-:root {
-	scroll-behavior: smooth;
-}
-*, ::after, ::before {
-	box-sizing: border-box;
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 @import url(particle.css);
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
@@ -57,54 +49,28 @@ a:hover{
 .navabr-light .nav-link{
 	color: #000;
 }
-#particles-js{
-	z-index: 5;
-	position: absolute;
-	top: 0;
+.sin {
+	clip-path: none;
+	padding: 120px 0 150px;
+    z-index: 2;
+	margin-top: 5%;
 }
-.lp{
-	background-image: url(../images/landing-background.jpg);
-	position: relative;
-	background-size: cover;
-	background-position: center center;
-	z-index: 0;
-	background-attachment: scroll;
-	height: 100vh;
-	align-items: center !important;
-	display: flex;
-}
-.bg-overlay {
-	background-color: rgba(0, 0, 0, 0.69);
-	position: absolute;
-	top: 0;
-	right: 0;
+.overlay {
 	width: 100%;
-	height: 100%;
-}
-<<<<<<< HEAD
-.custom-nav {
+	height: fit-content;
 	background-color: transparent;
-	padding: 20px 0px;
-	width: 100%;
-	border-radius: 0px;
-	z-index: 999;
-	margin-bottom: 0px;
-	transition: all 0.5s ease-in-out;
+	background-image: radial-gradient(at center center, #393434 0%, #1a1818 100%);
+	opacity: 0.5;
+	transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+	position: absolute;
+	z-index: 3;
 }
-.fixed-top {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 1030;
-=======
 .header-content{
 	margin-top: -3rem;
 }
 header{
 	height: 60em;
 	max-height: 100vh;
->>>>>>> 2993044555a490c7d1816e3eaba1902f8c33cb55
 }
 header > .container{
 	z-index: 4;
@@ -161,7 +127,7 @@ header > .container{
 	border-radius: 2px;
 	z-index: -1;
 	bottom: 0px;
-	transition: all 0.2s;
+	transition: all .2s;
 	height: 10px;
 	width: 3px;
 	background: #fff;
@@ -179,22 +145,6 @@ header > .container{
 
 #particles-js{
 	height: 100vh;
-}
-#about{
-	margin-bottom: 5rem;
-}
-.img-div{
-	display: flex;
-}
-.about-img{
-	padding: 0.25rem;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    border-radius: 0.25rem;
-    max-width: 75%;
-    height: auto;
-	margin-right: auto !important;
-    margin-left: auto !important;
 }
 .about{
 	margin-top: 6rem;
