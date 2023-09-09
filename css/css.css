@@ -7,7 +7,7 @@ body{
 *, ::after, ::before {
 	box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700');
 @import url(particle.css);
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 @import url(media.css);
@@ -184,8 +184,11 @@ header > .container{
     border-radius: 0.25rem;
     max-width: 75%;
     height: auto;
-	margin-right: auto !important;
     margin-left: auto !important;
+}
+.about-txt{
+	--bs-text-opacity: 1;
+    color: #6c757d!important;
 }
 .about{
 	margin-top: 6rem;

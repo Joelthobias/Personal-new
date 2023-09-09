@@ -17,29 +17,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
     <body>
-        <script>
-            $(function () {
-                $(document).scroll(function () {
-                    var $nav = $(".navbar");
-                    $nav.toggleClass('navbar-light bg-light', $(this).scrollTop() > $nav.height());
-                });
-            });
-            $(function () {
-                $(document).scroll(function () {
-                    var $nav = $(".navbar");
-                    $nav.removeClass('navbar-dark', $(this).scrollTop() > $nav.addClass('navbar-dark'));
-                });
-            });
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 50) {
-                    $(".navbar").removeClass("navbar-dark");
-                } else {
-                    $(".navbar").addClass("navbar-dark");
-                }
-            });
-        </script>
 
-            <nav class="containers navbar-light fixed-top navbar  navbar-expand-lg  ">
+
+            <nav class="containers navbar-light fixed-top navbar bg-light  navbar-expand-lg  ">
                 <div class="container">
                     <h1 class="navbar-brand">Joel</h1>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,25 +58,24 @@
         
         <section id="about">
             <div class="container">
-                <div class="row">
-                    <div class="col-6 mt-5 img-div align-items-center">
+                <div class="row mt-5">
+                    <div class="col-6  img-div align-items-center">
                         <img src= "./images/profile.jpg" class="about-img" alt="">
                     </div>
-                    <div class="col-5"></div>
-                </div>
-            </div>
-        </section>
-        <section id="projects">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="" alt="" class="img-project">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="" alt="" class="img-project">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="" alt="" class="img-project">
+                    <div class="col-5">
+                        <h2 class="about-title"> <span class="fw-bold"> About </span> Me</h2>
+                        <h4 class="about-sub-title mt-3">Hello I'm Joel</h4>
+                        <p class="about-txt mt-3">
+                            "A passionate web developer specializing in backend technologies. With a strong foundation in computer engineering and proficiency in Node.js, Express.js, MongoDB, and Handlebars, I bring creative solutions to life through seamless web application development.
+                            <br>
+                        </p>
+                        <p class="about-txt mt-3">
+                            Currently a Trainee Web Developer at Techfriar Technologies, Infomark, Kochi, I thrive in collaborative environments where I can contribute to innovative projects. My dedication to continuous learning and my ability to adapt quickly to emerging technologies fuel my drive for delivering efficient and reliable solutions.
+                            <br>
+                        </p>
+                        <p class="about-txt mt-3">
+                            Beyond coding, I enjoy playing volleyball and staying active, while always keeping an eye on the latest web development trends."
+                        </p>
                     </div>
                 </div>
             </div>
